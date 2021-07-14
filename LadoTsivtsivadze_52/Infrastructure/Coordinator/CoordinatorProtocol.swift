@@ -9,7 +9,7 @@ import UIKit
 
 protocol CoordinatorProtocol: AnyObject {
     
-//    var networkManger: NetworkManagerProtocol? { get }
+//    var productManager: ProductManager? { get }
 //    var homeServiceManager: HomeServicesManagerProtocol? { get }
         
     init(_ window: UIWindow?, navigationController: UINavigationController?)

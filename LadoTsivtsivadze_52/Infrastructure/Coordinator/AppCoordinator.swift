@@ -20,7 +20,7 @@ final class AppCoordinator: CoordinatorProtocol {
     }
     
     func start() {
-        let vc = MainController.instantiateFromStoryboard()
+        let vc = MainTabBarController.instantiateFromStoryboard()
         vc.coordinator = self
         navigationController?.setViewControllers([vc], animated: false)
         

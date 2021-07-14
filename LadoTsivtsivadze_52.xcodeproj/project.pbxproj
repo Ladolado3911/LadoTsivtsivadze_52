@@ -19,15 +19,17 @@
 		2476566F269EED9D00FE2380 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2476566C269EED9D00FE2380 /* NetworkManager.swift */; };
 		24765672269EF36400FE2380 /* Extension+UITableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24765671269EF36400FE2380 /* Extension+UITableCell.swift */; };
 		24765675269EF53900FE2380 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 24765674269EF53900FE2380 /* Kingfisher */; };
-		2476567A269EF84A00FE2380 /* MainController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24765679269EF84A00FE2380 /* MainController.storyboard */; };
-		2476567C269EF86600FE2380 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2476567B269EF86600FE2380 /* MainController.swift */; };
 		24765685269EF90700FE2380 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24765681269EF90700FE2380 /* AppCoordinator.swift */; };
 		24765686269EF90700FE2380 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24765682269EF90700FE2380 /* Storyboarded.swift */; };
 		24765687269EF90700FE2380 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24765683269EF90700FE2380 /* CoordinatorProtocol.swift */; };
 		24765688269EF90700FE2380 /* CoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24765684269EF90700FE2380 /* CoordinatorDelegate.swift */; };
 		2476568B269EF94400FE2380 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2476568A269EF94400FE2380 /* BaseViewController.swift */; };
-		24765690269F1BDE00FE2380 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2476568E269F1BDE00FE2380 /* TestCell.swift */; };
-		24765691269F1BDE00FE2380 /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2476568F269F1BDE00FE2380 /* TestCell.xib */; };
+		24765694269F36EF00FE2380 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24765692269F36EF00FE2380 /* MainTabBarController.swift */; };
+		24765695269F36EF00FE2380 /* MainTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24765693269F36EF00FE2380 /* MainTabBarController.storyboard */; };
+		2476569A269F374C00FE2380 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24765699269F374C00FE2380 /* HomeCoordinator.swift */; };
+		2476569D269F377400FE2380 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2476569B269F377400FE2380 /* HomeViewController.storyboard */; };
+		2476569E269F377400FE2380 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2476569C269F377400FE2380 /* HomeViewController.swift */; };
+		247656A1269F3A9C00FE2380 /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247656A0269F3A9C00FE2380 /* HomeTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,15 +46,17 @@
 		2476566B269EED9D00FE2380 /* ProductManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
 		2476566C269EED9D00FE2380 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		24765671269EF36400FE2380 /* Extension+UITableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableCell.swift"; sourceTree = SOURCE_ROOT; };
-		24765679269EF84A00FE2380 /* MainController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainController.storyboard; sourceTree = "<group>"; };
-		2476567B269EF86600FE2380 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		24765681269EF90700FE2380 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		24765682269EF90700FE2380 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		24765683269EF90700FE2380 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		24765684269EF90700FE2380 /* CoordinatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorDelegate.swift; sourceTree = "<group>"; };
 		2476568A269EF94400FE2380 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		2476568E269F1BDE00FE2380 /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
-		2476568F269F1BDE00FE2380 /* TestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
+		24765692269F36EF00FE2380 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		24765693269F36EF00FE2380 /* MainTabBarController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainTabBarController.storyboard; sourceTree = "<group>"; };
+		24765699269F374C00FE2380 /* HomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		2476569B269F377400FE2380 /* HomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		2476569C269F377400FE2380 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		247656A0269F3A9C00FE2380 /* HomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				24765678269EF83500FE2380 /* Main */,
+				24765696269F371A00FE2380 /* Home */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -223,20 +228,53 @@
 		2476568C269EFBF500FE2380 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2476568D269F1BC400FE2380 /* Cells */,
-				24765679269EF84A00FE2380 /* MainController.storyboard */,
-				2476567B269EF86600FE2380 /* MainController.swift */,
+				24765693269F36EF00FE2380 /* MainTabBarController.storyboard */,
+				24765692269F36EF00FE2380 /* MainTabBarController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		2476568D269F1BC400FE2380 /* Cells */ = {
+		24765696269F371A00FE2380 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				2476568E269F1BDE00FE2380 /* TestCell.swift */,
-				2476568F269F1BDE00FE2380 /* TestCell.xib */,
+				24765697269F372000FE2380 /* Coordinator */,
+				24765698269F372600FE2380 /* View */,
+				2476569F269F3A6F00FE2380 /* ViewModel */,
 			);
-			path = Cells;
+			path = Home;
+			sourceTree = "<group>";
+		};
+		24765697269F372000FE2380 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				24765699269F374C00FE2380 /* HomeCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		24765698269F372600FE2380 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				247656A2269F3FFC00FE2380 /* New */,
+				2476569B269F377400FE2380 /* HomeViewController.storyboard */,
+				2476569C269F377400FE2380 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2476569F269F3A6F00FE2380 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				247656A0269F3A9C00FE2380 /* HomeTableView.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		247656A2269F3FFC00FE2380 /* New */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = New;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,9 +340,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2476569D269F377400FE2380 /* HomeViewController.storyboard in Resources */,
+				24765695269F36EF00FE2380 /* MainTabBarController.storyboard in Resources */,
 				24765657269EEC2800FE2380 /* LaunchScreen.storyboard in Resources */,
-				24765691269F1BDE00FE2380 /* TestCell.xib in Resources */,
-				2476567A269EF84A00FE2380 /* MainController.storyboard in Resources */,
 				24765654269EEC2800FE2380 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,20 +354,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				247656A1269F3A9C00FE2380 /* HomeTableView.swift in Sources */,
 				24765685269EF90700FE2380 /* AppCoordinator.swift in Sources */,
 				2476566F269EED9D00FE2380 /* NetworkManager.swift in Sources */,
+				24765694269F36EF00FE2380 /* MainTabBarController.swift in Sources */,
+				2476569E269F377400FE2380 /* HomeViewController.swift in Sources */,
 				24765666269EED5E00FE2380 /* CollectionDataSource.swift in Sources */,
 				24765667269EED5E00FE2380 /* TableViewDataSource.swift in Sources */,
 				2476566E269EED9D00FE2380 /* ProductManager.swift in Sources */,
 				2476568B269EF94400FE2380 /* BaseViewController.swift in Sources */,
-				2476567C269EF86600FE2380 /* MainController.swift in Sources */,
 				24765672269EF36400FE2380 /* Extension+UITableCell.swift in Sources */,
 				24765687269EF90700FE2380 /* CoordinatorProtocol.swift in Sources */,
-				24765690269F1BDE00FE2380 /* TestCell.swift in Sources */,
 				24765669269EED9000FE2380 /* Typealiases.swift in Sources */,
 				24765688269EF90700FE2380 /* CoordinatorDelegate.swift in Sources */,
 				2476564B269EEC2700FE2380 /* AppDelegate.swift in Sources */,
 				2476564D269EEC2700FE2380 /* SceneDelegate.swift in Sources */,
+				2476569A269F374C00FE2380 /* HomeCoordinator.swift in Sources */,
 				2476566D269EED9D00FE2380 /* Models.swift in Sources */,
 				24765686269EF90700FE2380 /* Storyboarded.swift in Sources */,
 			);

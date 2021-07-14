@@ -8,35 +8,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main Controller-->
+        <!--Home View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="MainController" id="Y6W-OH-hqX" customClass="MainController" customModule="LadoTsivtsivadze_52" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="LadoTsivtsivadze_52" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n7Q-u3-EZX">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RAq-3S-s5H">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="n7Q-u3-EZX" secondAttribute="trailing" id="GDT-9L-l2y"/>
-                            <constraint firstItem="n7Q-u3-EZX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ne7-hN-DYM"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="n7Q-u3-EZX" secondAttribute="bottom" id="vPv-xP-LYU"/>
-                            <constraint firstItem="n7Q-u3-EZX" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="wRl-uC-vvp"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="RAq-3S-s5H" secondAttribute="bottom" id="3dk-V5-y0S"/>
+                            <constraint firstItem="RAq-3S-s5H" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="CXT-Rs-g1V"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="RAq-3S-s5H" secondAttribute="trailing" id="jAm-Vy-D24"/>
+                            <constraint firstItem="RAq-3S-s5H" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="nwL-xM-iSM"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tblView" destination="n7Q-u3-EZX" id="rHF-yV-8fa"/>
+                        <outlet property="tblView" destination="RAq-3S-s5H" id="K9T-ex-pLN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="107" y="84"/>
+            <point key="canvasLocation" x="139" y="116"/>
         </scene>
     </scenes>
     <resources>

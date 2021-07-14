@@ -73,7 +73,6 @@ class GenericTableDataSource<T, E, F>: NSObject, TableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let data = self.data as? Array<Element> {
-            print(data.count)
             return data.count
         }
         else {
