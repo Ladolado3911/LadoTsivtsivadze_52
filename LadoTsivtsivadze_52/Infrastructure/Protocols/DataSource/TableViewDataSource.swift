@@ -10,15 +10,17 @@ import UIKit
 
 protocol TableViewDataSource: TableDataSource {
     
+    associatedtype DataArray
+    associatedtype RootController
+    
     var tableview: UITableView! { get set }
     var cellsArr: [Cell]! { get set }
-    var rootController: UIViewController? { get set }
-    var data: Any? { get set }
-    
-    init(with collectionView: UITableView,
-         with cellsArr: [Cell],
-         with rootController: UIViewController,
-         with data: Any)
+
+    init(tableView tblView: UITableView,
+         cellsArray arr: [Cell],
+         rootController controller: Any,
+         dataArray data: DataArray,
+         rootType rtype: RootController)
     
     func configTable()
     func configCells()
@@ -26,19 +28,19 @@ protocol TableViewDataSource: TableDataSource {
 
 extension TableViewDataSource {
     
-    init(with tableview: UITableView,
-         with cellsArr: [Cell],
-         with rootController: UIViewController,
-         width data: Any) {
-        
-        self.init()
-        self.tableview = tableview
-        self.cellsArr = cellsArr
-        self.rootController = rootController
-        self.data = data
-        self.configTable()
-        self.configCells()
-    }
+//    init(tableView tblView: UITableView,
+//         cellsArray arr: [Cell],
+//         rootController controller: Any,
+//         dataArray data: Any) {
+//
+//        self.init()
+//        self.tableview = tblView
+//        self.cellsArr = arr
+//        self.rootController = controller as? Self.RootController
+//        self.data = data as? Self.DataArray
+//        self.configTable()
+//        self.configCells()
+//    }
     
     func configTable() {
         self.tableview.dataSource = self
@@ -51,20 +53,58 @@ extension TableViewDataSource {
             self.tableview.register(nib, forCellReuseIdentifier: cell.identifier)
         }
     }
+//
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        if let data = data as? Array<Any> {
+//            return data.count
+//        }
+//        else {
+//            return 0
+//        }
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = cellsArr.first
+//        let realCell = tableView.dequeueReusableCell(withIdentifier: (cell?.identifier)!)
+//        return realCell!
+//    }
+}
+
+final class GenericTableDataSource<T, E>: NSObject, TableViewDataSource {
     
+    typealias DataArray = T
+    typealias RootController = E.Type
+    
+    var tableview: UITableView!
+    var cellsArr: [Cell]!
+    var rootController: RootController!
+    var data: DataArray!
+
+    init(tableView tblView: UITableView,
+         cellsArray arr: [Cell],
+         rootController controller: Any,
+         dataArray data: DataArray,
+         rootType rtype: E.Type) {
+        
+        super.init()
+        self.tableview = tblView
+        self.cellsArr = arr
+        self.rootController = controller as? RootController
+        //print(type(of: data))
+        self.data = data
+        print(self.data!)
+        print(type(of: self.data!))
+        
+        self.configTable()
+        self.configCells()
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let data = data as? Array<Any> {
-            return data.count
-        }
-        else {
-            return 0
-        }
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = cellsArr.first
-        let realCell = tableView.dequeueReusableCell(withIdentifier: (cell?.identifier)!)
-        return realCell!
+        return UITableViewCell()
     }
 }
 

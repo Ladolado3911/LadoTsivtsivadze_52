@@ -26,6 +26,8 @@
 		24765687269EF90700FE2380 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24765683269EF90700FE2380 /* CoordinatorProtocol.swift */; };
 		24765688269EF90700FE2380 /* CoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24765684269EF90700FE2380 /* CoordinatorDelegate.swift */; };
 		2476568B269EF94400FE2380 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2476568A269EF94400FE2380 /* BaseViewController.swift */; };
+		24765690269F1BDE00FE2380 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2476568E269F1BDE00FE2380 /* TestCell.swift */; };
+		24765691269F1BDE00FE2380 /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2476568F269F1BDE00FE2380 /* TestCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		24765683269EF90700FE2380 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		24765684269EF90700FE2380 /* CoordinatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorDelegate.swift; sourceTree = "<group>"; };
 		2476568A269EF94400FE2380 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2476568E269F1BDE00FE2380 /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
+		2476568F269F1BDE00FE2380 /* TestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,8 +179,7 @@
 		24765678269EF83500FE2380 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				24765679269EF84A00FE2380 /* MainController.storyboard */,
-				2476567B269EF86600FE2380 /* MainController.swift */,
+				2476568C269EFBF500FE2380 /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -215,6 +218,25 @@
 				2476568A269EF94400FE2380 /* BaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		2476568C269EFBF500FE2380 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2476568D269F1BC400FE2380 /* Cells */,
+				24765679269EF84A00FE2380 /* MainController.storyboard */,
+				2476567B269EF86600FE2380 /* MainController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2476568D269F1BC400FE2380 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2476568E269F1BDE00FE2380 /* TestCell.swift */,
+				2476568F269F1BDE00FE2380 /* TestCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24765657269EEC2800FE2380 /* LaunchScreen.storyboard in Resources */,
+				24765691269F1BDE00FE2380 /* TestCell.xib in Resources */,
 				2476567A269EF84A00FE2380 /* MainController.storyboard in Resources */,
 				24765654269EEC2800FE2380 /* Assets.xcassets in Resources */,
 			);
@@ -302,6 +325,7 @@
 				2476567C269EF86600FE2380 /* MainController.swift in Sources */,
 				24765672269EF36400FE2380 /* Extension+UITableCell.swift in Sources */,
 				24765687269EF90700FE2380 /* CoordinatorProtocol.swift in Sources */,
+				24765690269F1BDE00FE2380 /* TestCell.swift in Sources */,
 				24765669269EED9000FE2380 /* Typealiases.swift in Sources */,
 				24765688269EF90700FE2380 /* CoordinatorDelegate.swift in Sources */,
 				2476564B269EEC2700FE2380 /* AppDelegate.swift in Sources */,

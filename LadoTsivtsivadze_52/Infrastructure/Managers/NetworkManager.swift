@@ -19,7 +19,7 @@ final class NetworkManager: NetworkManagerProtocol {
     func get<T: Codable>(model: T.Type, with url: String, completion: @escaping ((Result<T, Error>) -> Void)) {
         URLSession.shared.dataTask(with: URL(string: url)!) {data, response, error in
             do {
-                let items = try JSONDecoder().decode(model, from: data!)
+                let items = try JSONDecoder().decode(T.self, from: data!)
                 completion(.success(items))
             }
             catch {
