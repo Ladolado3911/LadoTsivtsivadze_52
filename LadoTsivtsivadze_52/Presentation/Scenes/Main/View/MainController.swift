@@ -19,8 +19,12 @@ class MainController: BaseViewController {
         let tableDataSource = GenericTableDataSource(tableView: tblView,
                                                      cellsArray: [cell],
                                                      rootController: self,
-                                                     dataArray: data,
-                                                     rootType: type(of: self))
+                                                     dataArray: data)
+        
+        let tableDataSource2 = GenericTableDataSource(tableView: tblView,
+                                                     cellsArray: [cell],
+                                                     rootController: self,
+                                                     dataArray: data2)
         
     }
 }

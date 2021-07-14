@@ -18,9 +18,8 @@ protocol TableViewDataSource: TableDataSource {
 
     init(tableView tblView: UITableView,
          cellsArray arr: [Cell],
-         rootController controller: Any,
-         dataArray data: DataArray,
-         rootType rtype: RootController)
+         rootController controller: RootController,
+         dataArray data: DataArray)
     
     func configTable()
     func configCells()
@@ -73,7 +72,7 @@ extension TableViewDataSource {
 final class GenericTableDataSource<T, E>: NSObject, TableViewDataSource {
     
     typealias DataArray = T
-    typealias RootController = E.Type
+    typealias RootController = E
     
     var tableview: UITableView!
     var cellsArr: [Cell]!
@@ -82,14 +81,13 @@ final class GenericTableDataSource<T, E>: NSObject, TableViewDataSource {
 
     init(tableView tblView: UITableView,
          cellsArray arr: [Cell],
-         rootController controller: Any,
-         dataArray data: DataArray,
-         rootType rtype: E.Type) {
+         rootController controller: RootController,
+         dataArray data: DataArray) {
         
         super.init()
         self.tableview = tblView
         self.cellsArr = arr
-        self.rootController = controller as? RootController
+        self.rootController = controller
         //print(type(of: data))
         self.data = data
         print(self.data!)
