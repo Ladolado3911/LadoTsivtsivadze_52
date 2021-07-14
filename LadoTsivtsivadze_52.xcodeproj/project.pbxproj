@@ -72,6 +72,7 @@
 		24765649269EEC2700FE2380 /* LadoTsivtsivadze_52 */ = {
 			isa = PBXGroup;
 			children = (
+				24765676269EF57D00FE2380 /* Domain */,
 				24765660269EED2B00FE2380 /* Infrastructure */,
 				2476565F269EED2500FE2380 /* Presentation */,
 				2476565E269EED1B00FE2380 /* App */,
@@ -115,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				2476566B269EED9D00FE2380 /* ProductManager.swift */,
-				2476566A269EED9D00FE2380 /* Models.swift */,
 				2476566C269EED9D00FE2380 /* NetworkManager.swift */,
 			);
 			path = Managers;
@@ -144,6 +144,14 @@
 				24765671269EF36400FE2380 /* Extension+UITableCell.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		24765676269EF57D00FE2380 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				2476566A269EED9D00FE2380 /* Models.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
