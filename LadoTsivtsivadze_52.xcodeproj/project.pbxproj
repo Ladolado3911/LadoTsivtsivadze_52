@@ -35,6 +35,7 @@
 		2487CA5026A001D300D15BE1 /* HomeContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487CA4E26A001D300D15BE1 /* HomeContentCell.swift */; };
 		2487CA5126A001D300D15BE1 /* HomeContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2487CA4F26A001D300D15BE1 /* HomeContentCell.xib */; };
 		2487CA5526A00B5600D15BE1 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487CA5426A00B5600D15BE1 /* Cells.swift */; };
+		2487CA5926A0553F00D15BE1 /* Cells2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487CA5826A0553F00D15BE1 /* Cells2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		2487CA4E26A001D300D15BE1 /* HomeContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentCell.swift; sourceTree = "<group>"; };
 		2487CA4F26A001D300D15BE1 /* HomeContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeContentCell.xib; sourceTree = "<group>"; };
 		2487CA5426A00B5600D15BE1 /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		2487CA5826A0553F00D15BE1 /* Cells2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,6 +329,7 @@
 		2487CA5326A00B4600D15BE1 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				2487CA5726A0552C00D15BE1 /* CollectCells */,
 				2487CA5626A00C8700D15BE1 /* TableCells */,
 			);
 			path = Cells;
@@ -338,6 +341,14 @@
 				2487CA5426A00B5600D15BE1 /* Cells.swift */,
 			);
 			path = TableCells;
+			sourceTree = "<group>";
+		};
+		2487CA5726A0552C00D15BE1 /* CollectCells */ = {
+			isa = PBXGroup;
+			children = (
+				2487CA5826A0553F00D15BE1 /* Cells2.swift */,
+			);
+			path = CollectCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,6 +436,7 @@
 				2476566F269EED9D00FE2380 /* NetworkManager.swift in Sources */,
 				24765694269F36EF00FE2380 /* MainTabBarController.swift in Sources */,
 				2487CA5026A001D300D15BE1 /* HomeContentCell.swift in Sources */,
+				2487CA5926A0553F00D15BE1 /* Cells2.swift in Sources */,
 				2476569E269F377400FE2380 /* HomeViewController.swift in Sources */,
 				24765666269EED5E00FE2380 /* CollectionDataSource.swift in Sources */,
 				24765667269EED5E00FE2380 /* TableViewDataSource.swift in Sources */,

@@ -19,36 +19,30 @@ struct Cell {
 
 protocol CollectionDataSource: CollectDataSource {
     
+    associatedtype DataArray
+    associatedtype RootController
+    associatedtype Element
+    
     var collectionView: UICollectionView! { get set }
     var cellsArr: [Cell]! { get set }
-    var rootController: UIViewController? { get set }
-    var data: Any? { get set}
     
-    init(with collectionView: UICollectionView,
-         with cellsArr: [Cell],
-         with rootController: UIViewController,
-         with data: Any)
+    init(collectionView collectView: UICollectionView,
+         cellsArray arr: [Cell],
+         rootController controller: RootController,
+         dataArray data: DataArray,
+         dataElement element: Element)
+    
+    init(collectionView collectView: UICollectionView,
+         cellsArray arr: [Cell],
+         rootController controller: RootController,
+         count data: Int)
     
     func configCollection()
     func configCells()
 }
 
 extension CollectionDataSource {
-    
-    init(with collectionView: UICollectionView,
-         with cellsArr: [Cell],
-         with rootController: UIViewController,
-         with data: Any) {
-        
-        self.init()
-        self.collectionView = collectionView
-        self.cellsArr = cellsArr
-        self.rootController = rootController
-        self.data = data
-        self.configCollection()
-        self.configCells()
-    }
-    
+   
     func configCollection() {
         self.collectionView.dataSource = self
         self.collectionView.delegate = self 
@@ -60,19 +54,69 @@ extension CollectionDataSource {
             self.collectionView.register(nib, forCellWithReuseIdentifier: cell.identifier)
         }
     }
+}
+
+
+class GenericCollectDataSource<T, E, F>: NSObject, CollectionDataSource {
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if let data = data as? Array<Any> {
+    typealias DataArray = T
+    typealias RootController = E
+    typealias Element = F
+    
+    var collectionView: UICollectionView!
+    var cellsArr: [Cell]!
+    var rootController: RootController!
+    var data: DataArray?
+    var element: Element!
+    var count: Int?
+    
+    var counter: Int {
+        if let data = self.data as? Array<Element> {
             return data.count
         }
         else {
-            return 0
+            return count!
         }
+    }
+
+    required init(collectionView collectView: UICollectionView,
+         cellsArray arr: [Cell],
+         rootController controller: RootController,
+         dataArray data: DataArray,
+         dataElement element: Element) {
+        
+        super.init()
+        self.collectionView = collectView
+        self.cellsArr = arr
+        self.rootController = controller
+        self.data = data
+        self.element = element
+        self.configCollection()
+        self.configCells()
+        self.collectionView.reloadData()
+    }
+    
+    required init(collectionView collectView: UICollectionView,
+         cellsArray arr: [Cell],
+         rootController controller: RootController,
+         count counter: Int) {
+        
+        super.init()
+        self.collectionView = collectView
+        self.cellsArr = arr
+        self.rootController = controller
+        self.count = counter
+        self.configCollection()
+        self.configCells()
+        self.collectionView.reloadData()
+    }
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return counter
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = cellsArr.first
-        let realCell = collectionView.dequeueReusableCell(withReuseIdentifier: (cell?.identifier)!, for: indexPath)
-        return realCell
+        return UICollectionViewCell()
     }
 }
+
