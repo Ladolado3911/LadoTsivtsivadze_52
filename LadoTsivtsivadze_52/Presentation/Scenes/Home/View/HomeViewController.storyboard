@@ -16,21 +16,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RAq-3S-s5H">
-                                <rect key="frame" x="0.0" y="64" width="414" height="798"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RAq-3S-s5H">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="scrollIndicatorInsets" minX="-1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="VEw-Y5-cMu">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Oxl-DD-6Re">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" systemColor="systemRedColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="RAq-3S-s5H" secondAttribute="bottom" id="3dk-V5-y0S"/>
-                            <constraint firstItem="RAq-3S-s5H" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="CXT-Rs-g1V"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="RAq-3S-s5H" secondAttribute="trailing" id="jAm-Vy-D24"/>
-                            <constraint firstItem="RAq-3S-s5H" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="nwL-xM-iSM"/>
+                            <constraint firstItem="RAq-3S-s5H" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="SyP-7N-MXK"/>
+                            <constraint firstItem="Oxl-DD-6Re" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="aFL-lP-bXk"/>
+                            <constraint firstItem="Oxl-DD-6Re" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="gUk-gW-3ms"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="RAq-3S-s5H" secondAttribute="bottom" id="lcr-09-XY1"/>
+                            <constraint firstItem="RAq-3S-s5H" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="lri-K8-kFq"/>
+                            <constraint firstItem="RAq-3S-s5H" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="wth-rV-6RO"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="spinner" destination="Oxl-DD-6Re" id="e0B-7r-htE"/>
                         <outlet property="tblView" destination="RAq-3S-s5H" id="K9T-ex-pLN"/>
                     </connections>
                 </viewController>
@@ -42,6 +55,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

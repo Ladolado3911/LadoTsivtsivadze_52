@@ -13,12 +13,18 @@ class HomeViewModel: NSObject {
     private var rootController: HomeViewController!
     private var productManager: ProductManager!
     private var dataSource: HomeTableViewDataSource?
+    private var spinner: UIActivityIndicatorView!
     
-    init(productManager manager: ProductManager, rootController controller: HomeViewController, tableView tblView: UITableView) {
+    init(productManager manager: ProductManager,
+         rootController controller: HomeViewController,
+         tableView tblView: UITableView,
+         spinner spin: UIActivityIndicatorView) {
+        
         super.init()
         self.productManager = manager
         self.tableView = tblView
         self.rootController = controller
+        self.spinner = spin
         drawTable()
     }
     
@@ -34,6 +40,8 @@ class HomeViewModel: NSObject {
     }
     
     func drawTable() {
+        spinner.isHidden = false
+        spinner.startAnimating()
         getProducts { [weak self] products in
             guard let self = self else { return }
             DispatchQueue.main.async {
@@ -42,6 +50,9 @@ class HomeViewModel: NSObject {
                                         rootController: self.rootController!,
                                         dataArray: Array(products.prefix(4)),
                                         dataElement: ProductModel.self)
+                
+                self.spinner.stopAnimating()
+                self.spinner.isHidden = true
             }
         }
     }

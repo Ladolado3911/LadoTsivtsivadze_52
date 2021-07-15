@@ -12,14 +12,19 @@ class HomeViewController: BaseViewController {
 //    private var homeServiceManager: HomeServicesManagerProtocol!
     private var viewModel: HomeViewModel?
     @IBOutlet weak var tblView: UITableView!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //spinner.isHidden = true
         configViewModel()
     }
     
     func configViewModel() {
-        viewModel = HomeViewModel(productManager: ProductManager(), rootController: self, tableView: tblView)
+        viewModel = HomeViewModel(productManager: ProductManager(),
+                                  rootController: self,
+                                  tableView: tblView,
+                                  spinner: spinner)
     }
     
 
