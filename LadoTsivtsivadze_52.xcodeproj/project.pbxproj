@@ -30,6 +30,10 @@
 		2476569D269F377400FE2380 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2476569B269F377400FE2380 /* HomeViewController.storyboard */; };
 		2476569E269F377400FE2380 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2476569C269F377400FE2380 /* HomeViewController.swift */; };
 		247656A1269F3A9C00FE2380 /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247656A0269F3A9C00FE2380 /* HomeTableView.swift */; };
+		2487CA4C26A001A100D15BE1 /* HomeTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487CA4A26A001A100D15BE1 /* HomeTitleCell.swift */; };
+		2487CA4D26A001A100D15BE1 /* HomeTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2487CA4B26A001A100D15BE1 /* HomeTitleCell.xib */; };
+		2487CA5026A001D300D15BE1 /* HomeContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487CA4E26A001D300D15BE1 /* HomeContentCell.swift */; };
+		2487CA5126A001D300D15BE1 /* HomeContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2487CA4F26A001D300D15BE1 /* HomeContentCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +61,10 @@
 		2476569B269F377400FE2380 /* HomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		2476569C269F377400FE2380 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		247656A0269F3A9C00FE2380 /* HomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
+		2487CA4A26A001A100D15BE1 /* HomeTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTitleCell.swift; sourceTree = "<group>"; };
+		2487CA4B26A001A100D15BE1 /* HomeTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTitleCell.xib; sourceTree = "<group>"; };
+		2487CA4E26A001D300D15BE1 /* HomeContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentCell.swift; sourceTree = "<group>"; };
+		2487CA4F26A001D300D15BE1 /* HomeContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeContentCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,7 +263,7 @@
 		24765698269F372600FE2380 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				247656A2269F3FFC00FE2380 /* New */,
+				247656A2269F3FFC00FE2380 /* Cells */,
 				2476569B269F377400FE2380 /* HomeViewController.storyboard */,
 				2476569C269F377400FE2380 /* HomeViewController.swift */,
 			);
@@ -270,11 +278,47 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		247656A2269F3FFC00FE2380 /* New */ = {
+		247656A2269F3FFC00FE2380 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2487CA4726A0011E00D15BE1 /* TableCells */,
+				2487CA4626A0011500D15BE1 /* CollectionCells */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2487CA4626A0011500D15BE1 /* CollectionCells */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = New;
+			path = CollectionCells;
+			sourceTree = "<group>";
+		};
+		2487CA4726A0011E00D15BE1 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				2487CA4926A0017E00D15BE1 /* HomeContentCell */,
+				2487CA4826A0017500D15BE1 /* HomeTitleCell */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		2487CA4826A0017500D15BE1 /* HomeTitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				2487CA4A26A001A100D15BE1 /* HomeTitleCell.swift */,
+				2487CA4B26A001A100D15BE1 /* HomeTitleCell.xib */,
+			);
+			path = HomeTitleCell;
+			sourceTree = "<group>";
+		};
+		2487CA4926A0017E00D15BE1 /* HomeContentCell */ = {
+			isa = PBXGroup;
+			children = (
+				2487CA4E26A001D300D15BE1 /* HomeContentCell.swift */,
+				2487CA4F26A001D300D15BE1 /* HomeContentCell.xib */,
+			);
+			path = HomeContentCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +385,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2476569D269F377400FE2380 /* HomeViewController.storyboard in Resources */,
+				2487CA4D26A001A100D15BE1 /* HomeTitleCell.xib in Resources */,
+				2487CA5126A001D300D15BE1 /* HomeContentCell.xib in Resources */,
 				24765695269F36EF00FE2380 /* MainTabBarController.storyboard in Resources */,
 				24765657269EEC2800FE2380 /* LaunchScreen.storyboard in Resources */,
 				24765654269EEC2800FE2380 /* Assets.xcassets in Resources */,
@@ -358,6 +404,7 @@
 				24765685269EF90700FE2380 /* AppCoordinator.swift in Sources */,
 				2476566F269EED9D00FE2380 /* NetworkManager.swift in Sources */,
 				24765694269F36EF00FE2380 /* MainTabBarController.swift in Sources */,
+				2487CA5026A001D300D15BE1 /* HomeContentCell.swift in Sources */,
 				2476569E269F377400FE2380 /* HomeViewController.swift in Sources */,
 				24765666269EED5E00FE2380 /* CollectionDataSource.swift in Sources */,
 				24765667269EED5E00FE2380 /* TableViewDataSource.swift in Sources */,
@@ -370,6 +417,7 @@
 				2476564B269EEC2700FE2380 /* AppDelegate.swift in Sources */,
 				2476564D269EEC2700FE2380 /* SceneDelegate.swift in Sources */,
 				2476569A269F374C00FE2380 /* HomeCoordinator.swift in Sources */,
+				2487CA4C26A001A100D15BE1 /* HomeTitleCell.swift in Sources */,
 				2476566D269EED9D00FE2380 /* Models.swift in Sources */,
 				24765686269EF90700FE2380 /* Storyboarded.swift in Sources */,
 			);

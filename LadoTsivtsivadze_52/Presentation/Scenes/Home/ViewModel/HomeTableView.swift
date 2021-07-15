@@ -7,39 +7,18 @@
 
 import UIKit
 
-let arr = [1, 2, 3]
-
-class HomeTableView {
-    
-    lazy var genericTableView = GenericTableDataSource(tableView: tableView,
-                                                          cellsArray: cellsArray,
-                                                          rootController: rootController,
-                                                          dataArray: dataArray,
-                                                          dataElement: element)
-    private var tableView: UITableView!
-    private var cellsArray: [Cell]!
-    private var rootController: HomeViewController!
-    private var dataArray: [Int]!
-    private var element: Int!
-    
-    init(with tableView: UITableView,
-         with cellsArray: [Cell],
-         with rootController: HomeViewController,
-         with dataArray: [Int],
-         with element: Int) {
-        
-        self.tableView = tableView
-        self.cellsArray = cellsArray
-        self.rootController = rootController
-        self.dataArray = dataArray
-        self.element = element
-    }
-}
-
 class HomeTableViewDataSource: GenericTableDataSource<Any, Any, Any> {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = cellsArr.first
-        let realCell = tableView.dequeueReusableCell(withIdentifier: (cell?.identifier)!)
-        return realCell!
+
+        if indexPath.row % 2 != 0 {
+            let cell = cellsArr.first
+            let realCell = tableView.dequeueReusableCell(withIdentifier: (cell?.identifier)!)
+            return realCell!
+        }
+        else {
+            let cell = cellsArr[1]
+            let realCell = tableView.dequeueReusableCell(withIdentifier: (cell.identifier)!)
+            return realCell!
+        }
     }
 }
