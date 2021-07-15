@@ -12,12 +12,12 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeTitleCell" rowHeight="282" id="KGk-i7-Jjw" customClass="HomeTitleCell" customModule="LadoTsivtsivadze_52" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="476" height="282"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="476" height="282"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuF-LJ-oUT">
-                        <rect key="frame" x="40" y="63.5" width="132" height="37"/>
+                        <rect key="frame" x="40" y="117" width="132" height="37"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="132" id="Huh-yr-Kbu"/>
                             <constraint firstAttribute="height" constant="37" id="g1g-e6-QqJ"/>
@@ -27,14 +27,14 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kingfisher-10.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bxJ-bn-2kN">
-                        <rect key="frame" x="364" y="0.0" width="72" height="164"/>
+                        <rect key="frame" x="364" y="0.0" width="72" height="271"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="164" id="Cms-E8-rL3"/>
                             <constraint firstAttribute="width" constant="72" id="TW8-Cv-FQJ"/>
                         </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="bxJ-bn-2kN" firstAttribute="leading" secondItem="nuF-LJ-oUT" secondAttribute="trailing" constant="192" id="31a-Sm-wiU"/>
                     <constraint firstItem="bxJ-bn-2kN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="DOM-YD-djW"/>
                     <constraint firstAttribute="bottomMargin" secondItem="bxJ-bn-2kN" secondAttribute="bottom" id="Dad-Hj-5B2"/>
                     <constraint firstAttribute="trailingMargin" secondItem="bxJ-bn-2kN" secondAttribute="trailing" constant="20" id="LAI-cV-dTZ"/>

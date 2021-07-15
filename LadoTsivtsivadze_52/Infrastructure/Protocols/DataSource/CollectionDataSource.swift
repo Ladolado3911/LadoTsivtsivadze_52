@@ -45,7 +45,7 @@ extension CollectionDataSource {
    
     func configCollection() {
         self.collectionView.dataSource = self
-        self.collectionView.delegate = self 
+        self.collectionView.delegate = self
     }
     
     func configCells() {
@@ -117,6 +117,14 @@ class GenericCollectDataSource<T, E, F>: NSObject, CollectionDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 20, height: 20)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
 }
 

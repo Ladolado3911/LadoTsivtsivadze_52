@@ -12,7 +12,9 @@ class HomeTableViewDataSource: GenericTableDataSource<Any, Any, Any> {
 
         switch indexPath.row {
         case 1:
-            let cell = tableView.dequeueReusableCell(withIdentifier: (cellsArr.first?.identifier)!)
+            let cell = tableView.dequeueReusableCell(withIdentifier: (cellsArr.first?.identifier)!) as? HomeContentCell
+            let controller = rootController as? HomeViewController
+            cell!.rootController = controller
             return cell!
         default:
             let cell = tableview.dequeueReusableCell(withIdentifier: cellsArr[1].identifier)

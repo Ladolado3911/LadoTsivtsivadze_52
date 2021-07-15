@@ -27,6 +27,7 @@ class HomeContentCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         guard let rootController = rootController else { return }
+        collectView.isScrollEnabled = false
         dataSource = HomeCollectViewDataSource(collectionView: collectView,
                                                cellsArray: Cells.homePageCollect,
                                                rootController: rootController,

@@ -10,16 +10,56 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectCell" id="gTV-IL-0wX" customClass="HomeCollectCell" customModule="LadoTsivtsivadze_52" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="309" height="206"/>
+            <rect key="frame" x="0.0" y="0.0" width="394" height="267"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="309" height="206"/>
+                <rect key="frame" x="0.0" y="0.0" width="394" height="267"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kingfisher-7.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gkZ-pm-yZD">
+                        <rect key="frame" x="30" y="0.0" width="334" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="334" id="zW9-Re-CxZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEe-mS-oXH">
+                        <rect key="frame" x="30" y="120" width="334" height="86"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBv-00-gYC">
+                        <rect key="frame" x="30" y="226" width="334" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" red="0.96862745100000003" green="0.090196078430000007" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
-            <size key="customSize" width="309" height="206"/>
-            <point key="canvasLocation" x="293.47826086956525" y="127.90178571428571"/>
+            <constraints>
+                <constraint firstItem="kEe-mS-oXH" firstAttribute="centerX" secondItem="gkZ-pm-yZD" secondAttribute="centerX" id="8yJ-Ds-Zsp"/>
+                <constraint firstItem="QBv-00-gYC" firstAttribute="centerX" secondItem="gkZ-pm-yZD" secondAttribute="centerX" id="9F7-xa-0FF"/>
+                <constraint firstAttribute="trailing" secondItem="gkZ-pm-yZD" secondAttribute="trailing" constant="30" id="H6h-cl-lTq"/>
+                <constraint firstItem="kEe-mS-oXH" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.322097" id="QLn-Oq-7Lh"/>
+                <constraint firstItem="kEe-mS-oXH" firstAttribute="trailing" secondItem="gkZ-pm-yZD" secondAttribute="trailing" id="RZd-xI-TaH"/>
+                <constraint firstAttribute="bottom" secondItem="QBv-00-gYC" secondAttribute="bottom" constant="20" id="UWn-cg-9Hn"/>
+                <constraint firstItem="QBv-00-gYC" firstAttribute="leading" secondItem="gkZ-pm-yZD" secondAttribute="leading" id="cAp-oO-SZR"/>
+                <constraint firstItem="QBv-00-gYC" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.0786517" id="ckB-pu-xrM"/>
+                <constraint firstItem="QBv-00-gYC" firstAttribute="trailing" secondItem="gkZ-pm-yZD" secondAttribute="trailing" id="g12-rx-kHq"/>
+                <constraint firstItem="gkZ-pm-yZD" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.374532" id="h3z-pd-yBd"/>
+                <constraint firstItem="kEe-mS-oXH" firstAttribute="leading" secondItem="gkZ-pm-yZD" secondAttribute="leading" id="iSJ-xy-rzl"/>
+                <constraint firstItem="kEe-mS-oXH" firstAttribute="top" secondItem="gkZ-pm-yZD" secondAttribute="bottom" constant="20" id="rmc-5p-iyQ"/>
+                <constraint firstItem="gkZ-pm-yZD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="uSv-Lf-2hc"/>
+                <constraint firstItem="QBv-00-gYC" firstAttribute="top" secondItem="kEe-mS-oXH" secondAttribute="bottom" constant="20" id="x7h-4F-JZu"/>
+                <constraint firstItem="gkZ-pm-yZD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yLr-Pm-pbt"/>
+            </constraints>
+            <size key="customSize" width="394" height="267"/>
+            <point key="canvasLocation" x="355.07246376811599" y="148.32589285714286"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="kingfisher-7.jpg" width="40.816326141357422" height="40.816326141357422"/>
+    </resources>
 </document>

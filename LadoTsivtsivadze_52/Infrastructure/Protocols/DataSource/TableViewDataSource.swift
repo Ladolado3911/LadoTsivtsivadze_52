@@ -108,5 +108,14 @@ class GenericTableDataSource<T, E, F>: NSObject, TableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 1 {
+            return tableview.bounds.width
+        }
+        else {
+            return 164
+        }
+    }
 }
 
