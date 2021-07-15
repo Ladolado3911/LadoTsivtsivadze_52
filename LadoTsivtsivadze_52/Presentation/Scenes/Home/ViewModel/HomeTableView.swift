@@ -17,7 +17,9 @@ class HomeTableViewDataSource: GenericTableDataSource<Any, Any, Any> {
             cell!.rootController = controller
             return cell!
         default:
-            let cell = tableview.dequeueReusableCell(withIdentifier: cellsArr[1].identifier)
+            let cell = tableview.dequeueReusableCell(withIdentifier: cellsArr[1].identifier) as? HomeTitleCell
+            guard let data = data as? [ProductModel] else { return cell! }
+            cell?.product = data[indexPath.row]
             return cell!
         }
     }

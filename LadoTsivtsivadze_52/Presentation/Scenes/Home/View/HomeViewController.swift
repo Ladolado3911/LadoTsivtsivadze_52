@@ -19,12 +19,7 @@ class HomeViewController: BaseViewController {
     }
     
     func configViewModel() {
-        let dataSource = HomeTableViewDataSource(tableView: tblView,
-                                             cellsArray: Cells.homePageTable,
-                                             rootController: self,
-                                             count: 4)
-        
-        viewModel = HomeViewModel(homeTableDataSource: dataSource, productManager: ProductManager())
+        viewModel = HomeViewModel(productManager: ProductManager(), rootController: self, tableView: tblView)
     }
     
 

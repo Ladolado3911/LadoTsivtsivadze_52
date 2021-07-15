@@ -65,7 +65,7 @@ class GenericTableDataSource<T, E, F>: NSObject, TableViewDataSource {
             return data.count
         }
         else {
-            return count!
+            return count ?? 0
         }
     }
 
