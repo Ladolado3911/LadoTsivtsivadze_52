@@ -8,9 +8,13 @@
 import UIKit
 
 struct Cells {
-    static var homePage: [Cell] {
+    static var homePageTable: [Cell] {
         let cell1 = Cell(nibName: "HomeContentCell", identifier: "HomeContentCell")
         let cell2 = Cell(nibName: "HomeTitleCell", identifier: "HomeTitleCell")
         return [cell1, cell2]
+    }
+    static var homePageCollect: [Cell] {
+        let cell = Cell(nibName: "HomeCollectCell", identifier: "HomeCollectCell")
+        return [cell]
     }
 }

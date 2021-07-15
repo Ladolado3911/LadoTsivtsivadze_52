@@ -36,6 +36,9 @@
 		2487CA5126A001D300D15BE1 /* HomeContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2487CA4F26A001D300D15BE1 /* HomeContentCell.xib */; };
 		2487CA5526A00B5600D15BE1 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487CA5426A00B5600D15BE1 /* Cells.swift */; };
 		2487CA5926A0553F00D15BE1 /* Cells2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487CA5826A0553F00D15BE1 /* Cells2.swift */; };
+		2487CA5B26A0575B00D15BE1 /* HomeCollectViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487CA5A26A0575B00D15BE1 /* HomeCollectViewDataSource.swift */; };
+		2487CA5E26A0584E00D15BE1 /* HomeCollectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487CA5C26A0584E00D15BE1 /* HomeCollectCell.swift */; };
+		2487CA5F26A0584E00D15BE1 /* HomeCollectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2487CA5D26A0584E00D15BE1 /* HomeCollectCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +72,9 @@
 		2487CA4F26A001D300D15BE1 /* HomeContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeContentCell.xib; sourceTree = "<group>"; };
 		2487CA5426A00B5600D15BE1 /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 		2487CA5826A0553F00D15BE1 /* Cells2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells2.swift; sourceTree = "<group>"; };
+		2487CA5A26A0575B00D15BE1 /* HomeCollectViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectViewDataSource.swift; sourceTree = "<group>"; };
+		2487CA5C26A0584E00D15BE1 /* HomeCollectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectCell.swift; sourceTree = "<group>"; };
+		2487CA5D26A0584E00D15BE1 /* HomeCollectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				247656A0269F3A9C00FE2380 /* HomeTableView.swift */,
+				2487CA5A26A0575B00D15BE1 /* HomeCollectViewDataSource.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -295,6 +302,8 @@
 		2487CA4626A0011500D15BE1 /* CollectionCells */ = {
 			isa = PBXGroup;
 			children = (
+				2487CA5C26A0584E00D15BE1 /* HomeCollectCell.swift */,
+				2487CA5D26A0584E00D15BE1 /* HomeCollectCell.xib */,
 			);
 			path = CollectionCells;
 			sourceTree = "<group>";
@@ -416,6 +425,7 @@
 			files = (
 				2476569D269F377400FE2380 /* HomeViewController.storyboard in Resources */,
 				2487CA4D26A001A100D15BE1 /* HomeTitleCell.xib in Resources */,
+				2487CA5F26A0584E00D15BE1 /* HomeCollectCell.xib in Resources */,
 				2487CA5126A001D300D15BE1 /* HomeContentCell.xib in Resources */,
 				24765695269F36EF00FE2380 /* MainTabBarController.storyboard in Resources */,
 				24765657269EEC2800FE2380 /* LaunchScreen.storyboard in Resources */,
@@ -437,10 +447,12 @@
 				24765694269F36EF00FE2380 /* MainTabBarController.swift in Sources */,
 				2487CA5026A001D300D15BE1 /* HomeContentCell.swift in Sources */,
 				2487CA5926A0553F00D15BE1 /* Cells2.swift in Sources */,
+				2487CA5E26A0584E00D15BE1 /* HomeCollectCell.swift in Sources */,
 				2476569E269F377400FE2380 /* HomeViewController.swift in Sources */,
 				24765666269EED5E00FE2380 /* CollectionDataSource.swift in Sources */,
 				24765667269EED5E00FE2380 /* TableViewDataSource.swift in Sources */,
 				2476566E269EED9D00FE2380 /* ProductManager.swift in Sources */,
+				2487CA5B26A0575B00D15BE1 /* HomeCollectViewDataSource.swift in Sources */,
 				2476568B269EF94400FE2380 /* BaseViewController.swift in Sources */,
 				24765672269EF36400FE2380 /* Extension+UITableCell.swift in Sources */,
 				24765687269EF90700FE2380 /* CoordinatorProtocol.swift in Sources */,

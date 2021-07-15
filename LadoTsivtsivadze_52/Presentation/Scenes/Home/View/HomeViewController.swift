@@ -17,7 +17,7 @@ class HomeViewController: BaseViewController {
         super.viewDidLoad()
 
         dataSource = HomeTableViewDataSource(tableView: tblView,
-                                             cellsArray: Cells.homePage,
+                                             cellsArray: Cells.homePageTable,
                                              rootController: self,
                                              count: 4)
 
