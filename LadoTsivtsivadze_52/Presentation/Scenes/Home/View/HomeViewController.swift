@@ -15,13 +15,11 @@ class HomeViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let cell1 = Cell(nibName: "HomeContentCell", identifier: "HomeContentCell")
-        let cell2 = Cell(nibName: "HomeTitleCell", identifier: "HomeTitleCell")
-        
+
         dataSource = HomeTableViewDataSource(tableView: tblView,
-                                             cellsArray: [cell1, cell2],
+                                             cellsArray: Cells.homePage,
                                              rootController: self,
-                                             count: 7)
+                                             count: 4)
 
 //        homeServiceManager = HomeServicesManager()
 //        homeServiceManager.fetchHomeData()

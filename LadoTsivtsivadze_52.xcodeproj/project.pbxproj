@@ -34,6 +34,7 @@
 		2487CA4D26A001A100D15BE1 /* HomeTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2487CA4B26A001A100D15BE1 /* HomeTitleCell.xib */; };
 		2487CA5026A001D300D15BE1 /* HomeContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487CA4E26A001D300D15BE1 /* HomeContentCell.swift */; };
 		2487CA5126A001D300D15BE1 /* HomeContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2487CA4F26A001D300D15BE1 /* HomeContentCell.xib */; };
+		2487CA5526A00B5600D15BE1 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487CA5426A00B5600D15BE1 /* Cells.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		2487CA4B26A001A100D15BE1 /* HomeTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTitleCell.xib; sourceTree = "<group>"; };
 		2487CA4E26A001D300D15BE1 /* HomeContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentCell.swift; sourceTree = "<group>"; };
 		2487CA4F26A001D300D15BE1 /* HomeContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeContentCell.xib; sourceTree = "<group>"; };
+		2487CA5426A00B5600D15BE1 /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				24765668269EED9000FE2380 /* Typealiases.swift */,
+				2487CA5326A00B4600D15BE1 /* Cells */,
 				24765680269EF90700FE2380 /* Coordinator */,
 				24765670269EF34900FE2380 /* Extensions */,
 				24765662269EED3B00FE2380 /* Protocols */,
@@ -321,6 +324,14 @@
 			path = HomeContentCell;
 			sourceTree = "<group>";
 		};
+		2487CA5326A00B4600D15BE1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2487CA5426A00B5600D15BE1 /* Cells.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -401,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				247656A1269F3A9C00FE2380 /* HomeTableView.swift in Sources */,
+				2487CA5526A00B5600D15BE1 /* Cells.swift in Sources */,
 				24765685269EF90700FE2380 /* AppCoordinator.swift in Sources */,
 				2476566F269EED9D00FE2380 /* NetworkManager.swift in Sources */,
 				24765694269F36EF00FE2380 /* MainTabBarController.swift in Sources */,
