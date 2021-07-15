@@ -10,17 +10,21 @@ import UIKit
 class HomeViewController: BaseViewController {
     
 //    private var homeServiceManager: HomeServicesManagerProtocol!
-    private var dataSource: HomeTableViewDataSource?
+    private var viewModel: HomeViewModel?
     @IBOutlet weak var tblView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        dataSource = HomeTableViewDataSource(tableView: tblView,
+        configViewModel()
+    }
+    
+    func configViewModel() {
+        let dataSource = HomeTableViewDataSource(tableView: tblView,
                                              cellsArray: Cells.homePageTable,
                                              rootController: self,
                                              count: 4)
-
+        
+        viewModel = HomeViewModel(homeTableDataSource: dataSource, productManager: ProductManager())
     }
     
 

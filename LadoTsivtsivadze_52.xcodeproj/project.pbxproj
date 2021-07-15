@@ -39,6 +39,7 @@
 		2487CA5B26A0575B00D15BE1 /* HomeCollectViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487CA5A26A0575B00D15BE1 /* HomeCollectViewDataSource.swift */; };
 		2487CA5E26A0584E00D15BE1 /* HomeCollectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487CA5C26A0584E00D15BE1 /* HomeCollectCell.swift */; };
 		2487CA5F26A0584E00D15BE1 /* HomeCollectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2487CA5D26A0584E00D15BE1 /* HomeCollectCell.xib */; };
+		2487CA6126A0690F00D15BE1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487CA6026A0690F00D15BE1 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		2487CA5A26A0575B00D15BE1 /* HomeCollectViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectViewDataSource.swift; sourceTree = "<group>"; };
 		2487CA5C26A0584E00D15BE1 /* HomeCollectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectCell.swift; sourceTree = "<group>"; };
 		2487CA5D26A0584E00D15BE1 /* HomeCollectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectCell.xib; sourceTree = "<group>"; };
+		2487CA6026A0690F00D15BE1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +288,7 @@
 			children = (
 				247656A0269F3A9C00FE2380 /* HomeTableView.swift */,
 				2487CA5A26A0575B00D15BE1 /* HomeCollectViewDataSource.swift */,
+				2487CA6026A0690F00D15BE1 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				247656A1269F3A9C00FE2380 /* HomeTableView.swift in Sources */,
 				2487CA5526A00B5600D15BE1 /* Cells.swift in Sources */,
 				24765685269EF90700FE2380 /* AppCoordinator.swift in Sources */,
+				2487CA6126A0690F00D15BE1 /* HomeViewModel.swift in Sources */,
 				2476566F269EED9D00FE2380 /* NetworkManager.swift in Sources */,
 				24765694269F36EF00FE2380 /* MainTabBarController.swift in Sources */,
 				2487CA5026A001D300D15BE1 /* HomeContentCell.swift in Sources */,
