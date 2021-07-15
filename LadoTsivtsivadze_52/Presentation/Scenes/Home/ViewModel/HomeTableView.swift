@@ -10,15 +10,13 @@ import UIKit
 class HomeTableViewDataSource: GenericTableDataSource<Any, Any, Any> {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        if indexPath.row % 2 != 0 {
-            let cell = cellsArr.first
-            let realCell = tableView.dequeueReusableCell(withIdentifier: (cell?.identifier)!)
-            return realCell!
-        }
-        else {
-            let cell = cellsArr[1]
-            let realCell = tableView.dequeueReusableCell(withIdentifier: (cell.identifier)!)
-            return realCell!
+        switch indexPath.row {
+        case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: (cellsArr.first?.identifier)!)
+            return cell!
+        default:
+            let cell = tableview.dequeueReusableCell(withIdentifier: cellsArr[1].identifier)
+            return cell!
         }
     }
 }

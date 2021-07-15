@@ -21,10 +21,6 @@ class HomeViewController: BaseViewController {
                                              rootController: self,
                                              count: 4)
 
-//        homeServiceManager = HomeServicesManager()
-//        homeServiceManager.fetchHomeData()
-        
-        //coordinator?.productManager.ge
     }
     
 

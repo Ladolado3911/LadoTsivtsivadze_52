@@ -8,7 +8,10 @@
 import UIKit
 
 class HomeContentCell: UITableViewCell {
-
+    
+    @IBOutlet weak var collectView: UICollectionView!
+    var rootController: HomeViewController?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -327,9 +327,17 @@
 		2487CA5326A00B4600D15BE1 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				2487CA5426A00B5600D15BE1 /* Cells.swift */,
+				2487CA5626A00C8700D15BE1 /* TableCells */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		2487CA5626A00C8700D15BE1 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				2487CA5426A00B5600D15BE1 /* Cells.swift */,
+			);
+			path = TableCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
