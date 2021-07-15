@@ -23,6 +23,11 @@ protocol TableViewDataSource: TableDataSource {
          dataArray data: DataArray,
          dataElement element: Element)
     
+    init(tableView tblView: UITableView,
+         cellsArray arr: [Cell],
+         rootController controller: RootController,
+         count data: Int)
+    
     func configTable()
     func configCells()
 }
@@ -51,8 +56,18 @@ class GenericTableDataSource<T, E, F>: NSObject, TableViewDataSource {
     var tableview: UITableView!
     var cellsArr: [Cell]!
     var rootController: RootController!
-    var data: DataArray!
+    var data: DataArray?
     var element: Element!
+    var count: Int?
+    
+    var counter: Int {
+        if let data = self.data as? Array<Element> {
+            return data.count
+        }
+        else {
+            return count!
+        }
+    }
 
     required init(tableView tblView: UITableView,
          cellsArray arr: [Cell],
@@ -70,14 +85,24 @@ class GenericTableDataSource<T, E, F>: NSObject, TableViewDataSource {
         self.configCells()
         self.tableview.reloadData()
     }
+    
+    required init(tableView tblView: UITableView,
+         cellsArray arr: [Cell],
+         rootController controller: RootController,
+         count counter: Int) {
+        
+        super.init()
+        self.tableview = tblView
+        self.cellsArr = arr
+        self.rootController = controller
+        self.count = counter
+        self.configTable()
+        self.configCells()
+        self.tableview.reloadData()
+    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let data = self.data as? Array<Element> {
-            return data.count
-        }
-        else {
-            return 0
-        }
+        return counter
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

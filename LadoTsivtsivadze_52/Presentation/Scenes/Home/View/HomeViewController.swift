@@ -21,8 +21,7 @@ class HomeViewController: BaseViewController {
         dataSource = HomeTableViewDataSource(tableView: tblView,
                                              cellsArray: [cell1, cell2],
                                              rootController: self,
-                                             dataArray: [1, 2, 3, 4, 5],
-                                             dataElement: Int.self)
+                                             count: 7)
 
 //        homeServiceManager = HomeServicesManager()
 //        homeServiceManager.fetchHomeData()
